@@ -5,4 +5,21 @@ def countdown(num):
     print(num)
     countdown(num - 1) 
 
-countdown(5)           
+countdown(5)    
+
+print("---------------")
+
+def countdown2(num):
+  for number in range(-num, 0):
+      print(-number)    
+
+  print("caboom")
+
+countdown2(5)
+
+print("---------------")
+
+def infinite_recursion(word):
+  print(word)
+  infinite_recursion(word)
+infinite_recursion("miaumiau")      
